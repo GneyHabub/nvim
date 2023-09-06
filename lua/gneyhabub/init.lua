@@ -1,5 +1,5 @@
-require("unmanned.remap")
-require("unmanned.set")
+require("gneyhabub.remap")
+require("gneyhabub.set")
 
 local home_dir = "/home/alexander"
 local is_mac = vim.fn.has "macunix" == 1
