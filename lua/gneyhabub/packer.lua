@@ -65,6 +65,6 @@ use ({
 use ('airblade/vim-gitgutter')
 use { 'embark-theme/vim', as = 'embark' }
 use {'AlexvZyl/nordic.nvim', as = 'nordic'}
-use({ 'rose-pine/neovim', as = 'rose-pine' })
+use({'nordtheme/vim', as = 'nordtheme' })
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
 end)

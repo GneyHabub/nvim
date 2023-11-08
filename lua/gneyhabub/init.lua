@@ -8,7 +8,7 @@ if is_mac then
 end
 -- pin nvim to a specific node version, regardless of the project
 -- prereq - need to install: nvm i 16.17.1
-local node_bin =  "/.nvm/versions/node/v18.16.0/bin"
+local node_bin =  "/.nvm/versions/node/v18.17.1/bin"
 vim.g.node_host_prog = home_dir .. node_bin .. "/node"
 
 -- for mason.nvim
