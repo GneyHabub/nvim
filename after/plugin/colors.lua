@@ -1,8 +1,5 @@
-require('nordtheme').setup({
-})
-
 function ColorMyPencils(color)
-	color = color or "nordtheme"
+	color = color or "everforest"
         vim.cmd.colorscheme(color)
 end
 

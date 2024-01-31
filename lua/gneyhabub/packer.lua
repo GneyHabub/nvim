@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('theprimeagen/harpoon')
   use ('mbbill/undotree')
   use ('tpope/vim-fugitive')
@@ -37,10 +37,10 @@ return require('packer').startup(function(use)
 }
 use ('github/copilot.vim')
 use ('ThePrimeagen/vim-be-good')
-use ({'folke/tokyonight.nvim',
-	  as = 'tokyonight',
+use ({'shaunsingh/nord.nvim',
+	  as = 'nord',
 	  config= function()
-		  vim.cmd('colorscheme tokyonight')
+		  vim.cmd('colorscheme nord')
 	  end
   })
 use ({
@@ -63,8 +63,7 @@ use ({
   },
 })
 use ('airblade/vim-gitgutter')
-use { 'embark-theme/vim', as = 'embark' }
-use {'AlexvZyl/nordic.nvim', as = 'nordic'}
-use({'nordtheme/vim', as = 'nordtheme' })
+use('sainnhe/everforest')
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
+use ('ray-x/go.nvim')
 end)
