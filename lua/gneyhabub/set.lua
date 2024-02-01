@@ -10,3 +10,11 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
+
+vim.api.nvim_exec([[
+  augroup eslint_autocmds
+    autocmd!
+    autocmd BufWritePre *.js,*.ts,*.tsx,*.jsx :EslintFixAll
+  augroup END
+]], false)
+

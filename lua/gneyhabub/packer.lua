@@ -37,12 +37,6 @@ return require('packer').startup(function(use)
 }
 use ('github/copilot.vim')
 use ('ThePrimeagen/vim-be-good')
-use ({'shaunsingh/nord.nvim',
-	  as = 'nord',
-	  config= function()
-		  vim.cmd('colorscheme nord')
-	  end
-  })
 use ({
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -63,7 +57,15 @@ use ({
   },
 })
 use ('airblade/vim-gitgutter')
-use('sainnhe/everforest')
+use "EdenEast/nightfox.nvim"
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
 use ('ray-x/go.nvim')
+use("petertriho/nvim-scrollbar")
+use {
+    'chipsenkbeil/distant.nvim',
+    branch = 'v0.3',
+    config = function()
+        require('distant'):setup()
+    end
+}
 end)
