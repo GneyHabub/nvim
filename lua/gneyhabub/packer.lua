@@ -57,7 +57,7 @@ use ({
   },
 })
 use ('airblade/vim-gitgutter')
-use "EdenEast/nightfox.nvim"
+use {'rose-pine/neovim', as = 'rose-pine'}
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
 use ('ray-x/go.nvim')
 use("petertriho/nvim-scrollbar")
@@ -68,4 +68,5 @@ use {
         require('distant'):setup()
     end
 }
+use {'dgagn/diagflow.nvim'}
 end)
