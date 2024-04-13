@@ -57,7 +57,7 @@ use ({
   },
 })
 use ('airblade/vim-gitgutter')
-use {'rose-pine/neovim', as = 'rose-pine'}
+use "sainnhe/everforest"
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
 use ('ray-x/go.nvim')
 use("petertriho/nvim-scrollbar")
@@ -68,5 +68,6 @@ use {
         require('distant'):setup()
     end
 }
-use {'dgagn/diagflow.nvim'}
+use ('https://codeberg.org/esensar/nvim-dev-container')
 end)
+

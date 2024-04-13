@@ -100,6 +100,11 @@ _G.packer_plugins = {
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/distant.nvim",
     url = "https://github.com/chipsenkbeil/distant.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/unmanned/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["glance.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vglance\frequire\0" },
     loaded = true,
@@ -140,6 +145,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dev-container"] = {
+    loaded = true,
+    path = "/home/unmanned/.local/share/nvim/site/pack/packer/start/nvim-dev-container",
+    url = "https://codeberg.org/esensar/nvim-dev-container"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
