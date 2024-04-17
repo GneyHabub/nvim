@@ -9,6 +9,9 @@ vim.opt.expandtab = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.signcolumn = 'yes'
+
 vim.opt.scrolloff = 8
 
 vim.api.nvim_exec([[
@@ -18,3 +21,4 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
+vim.g.have_nerd_font = true

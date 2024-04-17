@@ -1,9 +1,5 @@
-require("rose-pine").setup({
-    variant = "auto",
-})
-
 function ColorMyPencils(color)
-	color = color or "everforest"
+	color = color or "catppuccin"
         vim.cmd.colorscheme(color)
 end
 
