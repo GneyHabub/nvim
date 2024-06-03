@@ -58,6 +58,7 @@ use ({
 })
 use ('airblade/vim-gitgutter')
 use { "catppuccin/nvim", as = "catppuccin" }
+use { 'shaunsingh/moonlight.nvim' }
 use ({'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'})
 use ('ray-x/go.nvim')
 use("petertriho/nvim-scrollbar")
