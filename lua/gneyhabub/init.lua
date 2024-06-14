@@ -1,7 +1,7 @@
 require("gneyhabub.remap")
 require("gneyhabub.set")
 
-local home_dir = "/home/alexander"
+local home_dir = "/home/unmanned"
 local is_mac = vim.fn.has "macunix" == 1
 if is_mac then
   home_dir = "/Users/alexander"
