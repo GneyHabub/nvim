@@ -141,6 +141,11 @@ _G.packer_plugins = {
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
     url = "https://github.com/shaunsingh/moonlight.nvim"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -186,6 +191,11 @@ _G.packer_plugins = {
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["remote-nvim.nvim"] = {
+    loaded = true,
+    path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/remote-nvim.nvim",
+    url = "https://github.com/amitds1997/remote-nvim.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/alexanderkrivonosov/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -219,14 +229,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: glance.nvim
-time([[Config for glance.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vglance\frequire\0", "config", "glance.nvim")
-time([[Config for glance.nvim]], false)
 -- Config for: distant.nvim
 time([[Config for distant.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\2\18\2\0\0009\0\2\0B\0\2\1K\0\1\0\nsetup\fdistant\frequire\0", "config", "distant.nvim")
 time([[Config for distant.nvim]], false)
+-- Config for: glance.nvim
+time([[Config for glance.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vglance\frequire\0", "config", "glance.nvim")
+time([[Config for glance.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

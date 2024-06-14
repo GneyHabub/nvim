@@ -71,5 +71,13 @@ use {
     end
 }
 use ('https://codeberg.org/esensar/nvim-dev-container')
+
+use {'amitds1997/remote-nvim.nvim',
+  requires = {
+    "nvim-lua/plenary.nvim", -- For standard functions
+    "MunifTanjim/nui.nvim", -- To build the plugin UI
+    "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+  }
+}
 end)
 
