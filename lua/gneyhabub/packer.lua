@@ -2,20 +2,21 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+-- Packer can manage itself
+use 'wbthomason/packer.nvim'
 
-  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use ('theprimeagen/harpoon')
-  use ('mbbill/undotree')
-  use ('tpope/vim-fugitive')
-  use {
+use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.2',
+  -- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+
+use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+use ('theprimeagen/harpoon')
+use ('mbbill/undotree')
+use ('tpope/vim-fugitive')
+use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v2.x',
   requires = {
@@ -37,11 +38,11 @@ return require('packer').startup(function(use)
 }
 use ('github/copilot.vim')
 use ('ThePrimeagen/vim-be-good')
+use ('nvim-tree/nvim-web-devicons')
 use ({
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 })
-use ('nvim-tree/nvim-web-devicons')
 use({
   "dnlhc/glance.nvim",
   config = function()
