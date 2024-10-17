@@ -20,7 +20,6 @@ lsp.ensure_installed({
   "prismals",
   "tailwindcss"
 })
-require 'lspconfig'.tsserver.setup {}
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
 

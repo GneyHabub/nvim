@@ -14,11 +14,4 @@ vim.opt.signcolumn = 'yes'
 
 vim.opt.scrolloff = 8
 
-vim.api.nvim_exec([[
-  augroup eslint_autocmds
-    autocmd!
-    autocmd BufWritePre *.js,*.ts,*.tsx,*.jsx :EslintFixAll
-  augroup END
-]], false)
-
 vim.g.have_nerd_font = true

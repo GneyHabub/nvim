@@ -6,7 +6,8 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#20212d',
+  bg       = '#272E33',
+  main     = "#A7C080",
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
@@ -39,7 +40,7 @@ local config = {
     -- Disable sections and component separators
     component_separators = '',
     section_separators = '',
-    theme = "catppuccino",
+    theme = "catppuccin",
     globalstatus = true,
   },
   sections = {
@@ -77,42 +78,13 @@ ins_left {
   function()
     return '▊'
   end,
-  color = { fg = colors.blue }, -- Sets highlighting of component
+  color = { fg = colors.main },      -- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 
 ins_left {
-  -- mode component
-  function()
-    return ''
-  end,
-  color = function()
-    -- auto change color according to neovims mode
-    local mode_color = {
-      n = colors.red,
-      i = colors.green,
-      v = colors.blue,
-      ['␖'] = colors.blue,
-      V = colors.blue,
-      c = colors.magenta,
-      no = colors.red,
-      s = colors.orange,
-      S = colors.orange,
-      ['␓'] = colors.orange,
-      ic = colors.yellow,
-      R = colors.violet,
-      Rv = colors.violet,
-      cv = colors.red,
-      ce = colors.red,
-      r = colors.cyan,
-      rm = colors.cyan,
-      ['r?'] = colors.cyan,
-      ['!'] = colors.red,
-      t = colors.red,
-    }
-    return { fg = mode_color[vim.fn.mode()] }
-  end,
-  padding = { right = 1 },
+  'mode',
+  color = { fg = colors.bg, bg = colors.main, gui = 'bold' },
 }
 
 ins_left {
@@ -124,7 +96,7 @@ ins_left {
 ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
-  color = { fg = colors.magenta, gui = 'bold' },
+  color = { fg = colors.main, gui = 'bold' },
 }
 
 ins_left { 'location' }
@@ -173,17 +145,17 @@ ins_left {
 
 -- Add components to right sections
 ins_right {
-  'o:encoding', -- option component same as &encoding in viml
+  'o:encoding',       -- option component same as &encoding in viml
   fmt = string.upper, -- I'm not sure why it's upper case either ;)
   cond = conditions.hide_in_width,
-  color = { fg = colors.green, gui = 'bold' },
+  color = { fg = colors.main, gui = 'bold' },
 }
 
 ins_right {
   'fileformat',
   fmt = string.upper,
   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.green, gui = 'bold' },
+  color = { fg = colors.main, gui = 'bold' },
 }
 
 ins_right {
@@ -208,7 +180,7 @@ ins_right {
   function()
     return '▊'
   end,
-  color = { fg = colors.blue },
+  color = { fg = colors.main },
   padding = { left = 1 },
 }
 
